@@ -24,5 +24,6 @@ if (in_array($lang, $langs)) {
 //---------- base structure..?>
 <html lang="<?php echo htmlspecialchars($lang); ?>">
 <head>
+    <title><?php echo htmlspecialchars($_['title']); ?></title>
     <link rel="stylesheet" href="/assets/UI/style.css">
 </head>
