@@ -1,16 +1,10 @@
 {
-    "name": "clst/katsuu04next",
+    "name": "clst04/clst04.moe",
     "type": "project",
-    "autoload": {
-        "psr-4": {
-            "Clst\\Katsuu04next\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "Céleste",
             "email": "celeste@katsuu04.dev"
         }
-    ],
-    "require": {}
+    ]
 }

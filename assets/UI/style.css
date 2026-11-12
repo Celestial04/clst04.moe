@@ -1,6 +1,16 @@
 html {
     background-color: #ffd9f0;
 }
-.index.header * {
-    margin-block: 0px;
+.index.header {
+    margin-bottom: 2rem;
+}
+.index.header *,
+.index.body h4 {
+    margin-block: 0;
+}
+.index.body p {
+    margin-bottom: 0;
+}
+.index.body {
+    border: thick double #6b6b6b
 }

@@ -1,15 +1,17 @@
 <?php
-// ---------- for debug..
+//---------- for debug..
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
-// ---------- passed $variables..
-$date = date('d/m/Y H:i:s');
+//---------- require(), include()..
+require('assets/utils/age.php');
+
+//---------- passed $variables..
 $langs = ['fr', 'en', 'ja'];
 $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
 
-// ---------- "if", "then", "else"..
+//---------- "if", "then", "else"..
 // languages set in browser
 if (in_array($lang, $langs)) {
     $_ = require_once __DIR__ . "/i18n/{$lang}.php";
@@ -20,13 +22,7 @@ if (in_array($lang, $langs)) {
 //---------- DB Connection..
 // $dbconn = pg_connect('host=' . $_ENV['host'] . ' dbname=' . $_ENV['dbname'] . ' user=' . $_ENV['user'] . ' password=' . $_ENV['password'] . '')
 //     or die('Error.');
-
-$birth = new DateTimeImmutable('11-07-2004');
-$age = $birth->diff(new DateTimeImmutable());
-
-$HA = ['hash' => trim(file_get_contents(__DIR__ . '/commit.txt')),];
-
-//---------- base structure.. ?>
+//---------- base structure..?>
 <html lang="<?php echo htmlspecialchars($lang); ?>">
 <head>
     <title><?php echo htmlspecialchars($_['title']); ?></title>
@@ -34,10 +30,10 @@ $HA = ['hash' => trim(file_get_contents(__DIR__ . '/commit.txt')),];
     <meta name="application-name" content="clst04.moe"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="description"
-    content="I'm <?php echo $age->y ?> years-old and I love cats. meow."/>
+    content="I'm <?php echo $a->y ?> years-old and I love cats. meow."/>
     <meta property="og:title" content="Celeste's website! (yep, again)"/>
     <meta property="og:description"
-    content="I'm <?php echo $age->y ?> years-old and I love cats. meow."/>
+    content="I'm <?php echo $a->y ?> years-old and I love cats. meow."/>
     <meta property="og:type" content="website"/>
     <meta property="og:locale" content="en_US"/>
     <meta property="og:locale:alternate" content="fr_FR"/>
@@ -46,7 +42,7 @@ $HA = ['hash' => trim(file_get_contents(__DIR__ . '/commit.txt')),];
     <meta property="og:url" content="https://clst04.moe/"/>
 
     <meta name="twitter:title" content="Celeste's website! (yep, again)"/>
-    <meta name="twitter:description" content="I'm <?php echo $age->y ?> years-old and I love cats. meow."/>
+    <meta name="twitter:description" content="I'm <?php echo $a->y ?> years-old and I love cats. meow."/>
     <meta name="twitter:site" content="@CELESTZEROKATRE"/>
     <meta name="twitter:card" content="summary_large_image"/>
 
