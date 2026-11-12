@@ -39,6 +39,8 @@ jobs:
           REMOTE_PATH="/var/www/html"
 
           rsync -az --delete \
+            --exclude='CNAME' \
+            --exclude='example.env' \
             --exclude='.github/' \
             --exclude='.vscode/' \
             -e "ssh -i ~/.ssh/id_ed25519" \
