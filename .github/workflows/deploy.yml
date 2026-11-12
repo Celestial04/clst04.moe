@@ -27,7 +27,7 @@ jobs:
           printf '%s\n' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
           chmod 600 ~/.ssh/known_hosts
 
-    - name: Generate commit info
+      - name: Generate commit info
         run: |
           echo "${GITHUB_SHA}" > commit.txt
 
