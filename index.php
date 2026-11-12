@@ -1,4 +1,7 @@
-<?php require('assets/init.php');?>
+<?php require('assets/init.php');
+
+$HA = ['hash' => trim(file_get_contents(__DIR__ . '/commit.txt')),];
+?>
 <body>
     <div class="index header">
         <h1><?php echo htmlspecialchars($_['index.title']); ?></h1>
@@ -6,5 +9,5 @@
         <h3><?php echo htmlspecialchars($_['index.subtitle.subtitle']); ?></h3>
     </div>
     <?php require __DIR__ . '/assets/UI/footer.php'; ?>
-    <?= htmlspecialchars(substr($commit['hash'], 0, 7)) ?>
+    <?= htmlspecialchars(substr($HA['hash'], 0, 7)) ?>
 </body>
