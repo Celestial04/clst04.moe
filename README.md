@@ -7,10 +7,11 @@ I have two version of this website, because this is more convenient for me to le
 ## How to test
 For this, you need [Visual Studio Code](https://code.visualstudio.com/).
 
-### Without DB
+### Steps to get it run
 1. Clone this repo.
 2. Lauch cloned repo with Visual Studio Code.
 3. Press CTRL + SHIFT + P.
 4. Select `Dev Containers: Reopen in Container`.
 5. Wait.
-6. Open in
+6. Open `index.php` file.
+7. Right-click on it, then `Start/Stop PHP Live Server`.

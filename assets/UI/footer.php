@@ -4,5 +4,5 @@
                 <?php echo htmlspecialchars($_['footer.source']); ?>
             </a>
             •
-        <a href="https://katsuu04.dev">katsuu04.dev</a></p>
+            <a href="https://katsuu04.dev">katsuu04.dev</a></p>
     </div>
