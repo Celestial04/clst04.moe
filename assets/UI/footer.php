@@ -1,6 +1,6 @@
 <div class="footer">
         <p>
-            <a href="https://github.com/Celestial04/katsuu04Next">
+            <a href="https://github.com/Celestial04/katsuu04Next/commit/<?= htmlspecialchars(substr($HA['hash'], 0, 7)) ?>">
                 <?= htmlspecialchars(substr($HA['hash'], 0, 7)) ?>
             </a>
             •
