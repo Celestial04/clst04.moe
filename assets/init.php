@@ -21,7 +21,7 @@ if (in_array($lang, $langs)) {
 // $dbconn = pg_connect('host=' . $_ENV['host'] . ' dbname=' . $_ENV['dbname'] . ' user=' . $_ENV['user'] . ' password=' . $_ENV['password'] . '')
 //     or die('Error.'); 
 
-$commit = ['hash' => trim(file_get_contents(__DIR__ . '/commit.txt')),];
+$commit = ['hash' => trim(file_get_contents(__DIR__ . '../commit.txt')),];
 
 //---------- base structure.. ?>
 <html lang="<?php echo htmlspecialchars($lang); ?>">
