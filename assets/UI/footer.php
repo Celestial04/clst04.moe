@@ -4,5 +4,6 @@
                 <?= htmlspecialchars(substr($HA['hash'], 0, 7)) ?>
             </a>
             •
-            <a href="https://katsuu04.dev">katsuu04.dev</a></p>
-    </div>
+            <a href="https://katsuu04.dev">katsuu04.dev</a>
+        </p>
+</div>
