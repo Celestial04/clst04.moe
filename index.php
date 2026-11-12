@@ -1,7 +1,4 @@
-<?php require('assets/init.php');
-
-$HA = ['hash' => trim(file_get_contents(__DIR__ . '/commit.txt')),];
-?>
+<?php require('assets/init.php');?>
 <body>
     <div class="index header">
         <h1><?php echo htmlspecialchars($_['index.title']); ?></h1>

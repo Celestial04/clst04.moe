@@ -19,7 +19,12 @@ if (in_array($lang, $langs)) {
 
 //---------- DB Connection..
 // $dbconn = pg_connect('host=' . $_ENV['host'] . ' dbname=' . $_ENV['dbname'] . ' user=' . $_ENV['user'] . ' password=' . $_ENV['password'] . '')
-//     or die('Error.'); 
+//     or die('Error.');
+
+$birth = new DateTimeImmutable('11-07-2004');
+$age = $birth->diff(new DateTimeImmutable());
+
+$HA = ['hash' => trim(file_get_contents(__DIR__ . '/commit.txt')),];
 
 //---------- base structure.. ?>
 <html lang="<?php echo htmlspecialchars($lang); ?>">
@@ -29,10 +34,10 @@ if (in_array($lang, $langs)) {
     <meta name="application-name" content="clst04.moe"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="description"
-    content="I'm 22 years-old and I love cats. meow."/>
+    content="I'm <?php echo $age->y ?> years-old and I love cats. meow."/>
     <meta property="og:title" content="Celeste's website! (yep, again)"/>
     <meta property="og:description"
-    content="I'm 22 years-old and I love cats. meow."/>
+    content="I'm <?php echo $age->y ?> years-old and I love cats. meow."/>
     <meta property="og:type" content="website"/>
     <meta property="og:locale" content="en_US"/>
     <meta property="og:locale:alternate" content="fr_FR"/>
@@ -41,7 +46,7 @@ if (in_array($lang, $langs)) {
     <meta property="og:url" content="https://clst04.moe/"/>
 
     <meta name="twitter:title" content="Celeste's website! (yep, again)"/>
-    <meta name="twitter:description" content="I'm 22 years-old and I love cats. meow."/>
+    <meta name="twitter:description" content="I'm <?php echo $age->y ?> years-old and I love cats. meow."/>
     <meta name="twitter:site" content="@CELESTZEROKATRE"/>
     <meta name="twitter:card" content="summary_large_image"/>
 
