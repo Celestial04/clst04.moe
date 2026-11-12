@@ -8,4 +8,4 @@ return [
     'index.body.about.title' => 'd',
     'index.body.about.desc' => 
     'e ' . $a->y . ' f'
-]; ?>
+];?>

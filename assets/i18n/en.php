@@ -7,4 +7,4 @@ return [
     'index.body.about.title' => 'About me!',
     'index.body.about.desc' => 
     'Hi! I\'m Celeste! I have ' . $a->y . ' years-old and I love so much cats and take pictures with my camera! I love coding too since I have 10 years-old.'
-]; ?>
+];?>
