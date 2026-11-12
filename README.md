@@ -10,17 +10,7 @@ For this, you need [Visual Studio Code](https://code.visualstudio.com/).
 ### Without DB
 1. Clone this repo.
 2. Lauch cloned repo with Visual Studio Code.
-3. Press F5.
-
-### With DB
-
-> [!WARNING]
-> I use a DB externally, and it use Postgres functions to connect to the DB! So, make sure you have a externally and functional DB thats work with Postgres!
-
-1. Clone this repo.
-2. Lauch cloned repo with Visual Studio Code.
-3. Duplicate/rename the `example.env` to `.env`.
-4. Set all the variables in `.env` file.
-5. ???
-6. ???
-7. Press F5.
+3. Press CTRL + SHIFT + P.
+4. Select `Dev Containers: Reopen in Container`.
+5. Wait.
+6. Open in
