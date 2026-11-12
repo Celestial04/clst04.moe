@@ -29,7 +29,7 @@ jobs:
 
       - name: Generate commit info
         run: |
-          echo "${GITHUB_SHA}" > commit.txt
+          echo "${GITHUB_SHA}" > assets/commit.txt
 
       - name: Deploy files with rsync
         env:
