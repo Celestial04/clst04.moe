@@ -1,5 +1,5 @@
 <!-- THIS IS NOT A REAL FILE, RENAME THIS FILE INTO [code_lang_max_2].php
-     THEN REPLACE EVERY THINGS BEETWEEN '' -->
+     THEN REPLACE EVERY THINGS BEETWEEN '' TYSM -->
 
 <?php require('assets/utils/age.php');
 return [
