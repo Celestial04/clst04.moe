@@ -1,0 +1,15 @@
+<!-- THIS IS NOT A REAL FILE, RENAME THIS FILE INTO [code_lang_max_2].php
+     THEN REPLACE EVERY THINGS BEETWEEN '' -->
+
+<?php require('assets/utils/age.php');
+return [
+    'title' // code
+     => 'Celeste\'s website!', // output
+
+    'index.header.title' => 'Replace me!',
+    'index.header.subtitle.1' => 'Remplace moi !',
+    'index.header.subtitle.2' => 'Replace me!',
+    'index.body.about.title' => 'Remplace moi !',
+    'index.body.about.desc' => 
+    'this is a exemple file, and i\'ve ' . $a->y . ' years-old and I love so much TRANSLATE THIS.'
+];?>
