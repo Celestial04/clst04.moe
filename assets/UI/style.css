@@ -1,5 +1,6 @@
-html {
+html, body {
     background-color: #ffd9f0;
+    height: 100%;
 }
 .index.header {
     margin-bottom: 2rem;
@@ -11,9 +12,16 @@ html {
 .index.body p {
     margin-bottom: 0;
 }
-.index.body.about {
-    border: thick double #6b6b6b
+.index.body.about,
+.index.body.why {
+    border: thick double #6b6b6b;
+    width: 400px
 }
 .index.body.why {
-    
+    position: absolute;
+    right: 0;
+}
+.footer {
+    position: fixed;
+    bottom: 0px;
 }
