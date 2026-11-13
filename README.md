@@ -7,6 +7,10 @@ I have two version of this website, because this is more convenient for me to le
 ## How to test
 For this, you need [Visual Studio Code](https://code.visualstudio.com/).
 
+## Translations
+This website use translations. To translate this into your language, please see ()[]
+
+
 ### Steps to get it run
 1. Clone this repo.
 2. Lauch cloned repo with Visual Studio Code.
