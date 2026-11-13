@@ -10,8 +10,5 @@ For this, you need [Visual Studio Code](https://code.visualstudio.com/).
 ### Steps to get it run
 1. Clone this repo.
 2. Lauch cloned repo with Visual Studio Code.
-3. Press CTRL + SHIFT + P.
-4. Select `Dev Containers: Reopen in Container`.
-5. Wait.
-6. Open `index.php` file.
-7. Right-click on it, then `Start/Stop PHP Live Server`.
+3. Open `index.php` file.
+4. Right-click on it, then `Start/Stop PHP Live Server`.

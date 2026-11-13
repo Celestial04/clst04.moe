@@ -11,6 +11,7 @@ html {
 .index.body p {
     margin-bottom: 0;
 }
-.index.body {
+.index.body.about {
     border: thick double #6b6b6b
 }
+.index.body.
