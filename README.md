@@ -6,13 +6,11 @@ I have two version of this website, because this is more convenient for me to le
 
 ## How to test
 For this, you need [Visual Studio Code](https://code.visualstudio.com/).
-
-## Translations
-This website use translations. To translate this into your language, please see [translate](assets/i18n/README.md).
-
-
 ### Steps to get it run
 1. Clone this repo.
 2. Lauch cloned repo with Visual Studio Code.
 3. Open `index.php` file.
 4. Right-click on it, then `Start/Stop PHP Live Server`.
+
+## Translations
+This project use translations. To translate this into your language, please see [translate](assets/i18n/README.md).
