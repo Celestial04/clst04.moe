@@ -7,5 +7,9 @@ return [
     'index.header.subtitle.2' => 'c',
     'index.body.about.title' => 'd',
     'index.body.about.desc' => 
-    'e ' . $a->y . ' f'
+    'e ' . $a->y . ' f',
+    'index.body.and' => 'g',
+    'index.body.why.title' => 'h',
+    'index.body.why.desc' => 
+    'i'
 ];?>

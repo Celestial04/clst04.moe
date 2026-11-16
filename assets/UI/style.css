@@ -1,6 +1,8 @@
-html, body {
+body, html {
     background-color: #ffd9f0;
     height: 100%;
+    width: 100%;
+    /*margin: 0px; */
 }
 .index.header {
     margin-bottom: 2rem;
@@ -19,7 +21,7 @@ html, body {
 }
 .index.body.why {
     position: absolute;
-    right: 0;
+    right: 0px;
 }
 .footer {
     position: fixed;

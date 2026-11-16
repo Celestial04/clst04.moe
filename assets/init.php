@@ -9,7 +9,8 @@ require('assets/utils/age.php');
 
 //---------- passed $variables..
 $langs = ['fr', 'en', 'ja'];
-$lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+$aLang = $_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? 'en';
+$lang = strtolower(substr($aLang, 0, 2));
 
 //---------- "if", "then", "else"..
 // languages set in browser

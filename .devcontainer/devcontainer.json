@@ -3,7 +3,8 @@
 		"vscode": {
 			"extensions": [
 				"lokalise.i18n-ally",
-				"t-myk.php-enabled-live-local-server"
+				"t-myk.php-enabled-live-local-server",
+				"yandeu.five-server"
 			]
 		}
 	}

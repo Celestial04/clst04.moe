@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy to clst04.moe
 
 on:
   push:
@@ -27,11 +27,11 @@ jobs:
           printf '%s\n' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
           chmod 600 ~/.ssh/known_hosts
 
-      - name: Generate commit info
+      - name: Get commit infos
         run: |
           echo "${GITHUB_SHA}" > assets/commit.txt
 
-      - name: Deploy files with rsync
+      - name: Transfert to web server
         env:
           SSH_HOST: ${{ secrets.SSH_HOST }}
           SSH_USER: ${{ secrets.SSH_USER }}
@@ -41,6 +41,8 @@ jobs:
           rsync -az --delete \
             --exclude='CNAME' \
             --exclude='example.env' \
+            --exclude='fiveserver.config.js' \
+            --exclude='.devcontainer/' \
             --exclude='.github/' \
             --exclude='.vscode/' \
             -e "ssh -i ~/.ssh/id_ed25519" \
