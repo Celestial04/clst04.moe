@@ -10,6 +10,5 @@ return [
     'e ' . $a->y . ' f',
     'index.body.and' => 'g',
     'index.body.website.title' => 'h',
-    'index.body.website.desc' => 
-    'i'
+    'index.body.website.desc' => 'i'
 ];?>

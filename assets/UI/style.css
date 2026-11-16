@@ -19,7 +19,7 @@ html {
 .index.body.me,
 .index.body.website {
     border: thick double #6b6b6b;
-    width: 300px
+    max-width: 500px
 }
 .index.body.website {
     display: flex;
