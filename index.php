@@ -7,14 +7,14 @@
         <h3><?php echo htmlspecialchars($_['index.header.subtitle.2']); ?></h3>
     </div>
     <div class="index body">
-        <div class="index body about">
-            <h4><?php echo htmlspecialchars($_['index.body.about.title']); ?></h4>
-            <p><?php echo htmlspecialchars($_['index.body.about.desc']); ?></p>
+        <div class="index body me">
+            <h4><?php echo htmlspecialchars($_['index.body.me.title']); ?></h4>
+            <p><?php echo htmlspecialchars($_['index.body.me.desc']); ?></p>
         </div>
-        <?php echo htmlspecialchars($_['index.body.and']); ?>
-        <div class="index body why">
-            <h4><?php echo htmlspecialchars($_['index.body.why.title']); ?></h4>
-            <p><?php echo htmlspecialchars($_['index.body.why.desc']); ?></p>
+        <p class="index body and"><?php echo htmlspecialchars($_['index.body.and']); ?></p>
+        <div class="index body website">
+            <h4><?php echo htmlspecialchars($_['index.body.website.title']); ?></h4>
+            <p><?php echo htmlspecialchars($_['index.body.website.desc']); ?></p>
         </div>
     </div>
     <?php require __DIR__ . '/assets/UI/footer.php'; ?>

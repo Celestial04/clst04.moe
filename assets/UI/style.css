@@ -1,8 +1,5 @@
-body, html {
+html {
     background-color: #ffd9f0;
-    height: 100%;
-    width: 100%;
-    /*margin: 0px; */
 }
 .index.header {
     margin-bottom: 2rem;
@@ -11,19 +8,30 @@ body, html {
 .index.body h4 {
     margin-block: 0;
 }
-.index.body p {
+.index.body.me p,
+.index.body.website p {
     margin-bottom: 0;
 }
-.index.body.about,
-.index.body.why {
-    border: thick double #6b6b6b;
-    width: 400px
+.index.body {
+    display: flex;
+    flex-direction: column;
 }
-.index.body.why {
-    position: absolute;
-    right: 0px;
+.index.body.me,
+.index.body.website {
+    border: thick double #6b6b6b;
+    width: 300px
+}
+.index.body.website {
+    display: flex;
+    align-self: flex-end;
 }
 .footer {
     position: fixed;
     bottom: 0px;
+}
+.index.body.and {
+    text-align: center;
+}
+.index.body.me h4 {
+    text-align: end;
 }
