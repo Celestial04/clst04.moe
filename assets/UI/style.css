@@ -1,5 +1,5 @@
 html {
-    background-color: #ffd9f0;
+    overflow-x: hidden;
 }
 .index.header {
     margin-bottom: 2rem;
@@ -17,7 +17,8 @@ html {
     flex-direction: column;
 }
 .index.body.me,
-.index.body.website {
+.index.body.website,
+.index.body.projects {
     border: thick double #6b6b6b;
     max-width: 500px
 }
@@ -32,6 +33,29 @@ html {
 .index.body.and {
     text-align: center;
 }
-.index.body.me h4 {
+.index.body.me h4,
+.index.body.projects h4 {
     text-align: end;
+}
+@media (max-width: 600px) {
+    .index.body.me,
+    .index.body.website,
+    .index.body.projects {
+        max-width: 300px;
+        width: 100%;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    html {
+        background-color: #000;
+        color: #fff;
+    }
+    .index.body.me,
+    .index.body.website,
+    .index.body.projects {
+        border-color: #fad;
+    }
+    a {
+        color: #faf;
+    }
 }

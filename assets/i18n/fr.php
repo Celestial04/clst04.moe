@@ -15,5 +15,9 @@ return [
     'C\'est mon site internet secondaire. Ça ne sert pas vraiment à grand chose de visiter le site,
      Mais j\'espère que je pourrait écrire beaucoup plus de choses que ce que je pourrait écrire sur
      mon site internet principal. Je veux faire de ce site internet une place pour que je puisse 
-     dire des choses que je ne dirais pas en temps normal sur mon site internet principal.'
+     dire des choses que je ne dirais pas en temps normal sur mon site internet principal.',
+    'index.body.another' => 'About this website!',
+    'index.body.projects.title' => 
+    'Mes projets!',
+    'index.body.projects.desc' => 'Projets. [à faire]'
 ];?>

@@ -14,5 +14,9 @@ return [
     'This is my secondary website. That\'s not a very big deal to visit this website,
     but I hope I can write more things that I would want to write into my main website.
     I want to make this website, a place for me to say somethings that I want to say into my primary website,
-    without risquing to destroy it.'
+    without risquing to destroy it.',
+    'index.body.another' => 'About this website!',
+    'index.body.projects.title' => 
+    'My procjets!',
+    'index.body.projects.desc' => 'projects'
 ];?>

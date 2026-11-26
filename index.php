@@ -15,6 +15,11 @@
             <h4><?php echo htmlspecialchars($_['index.body.website.title']); ?></h4>
             <p><?php echo htmlspecialchars($_['index.body.website.desc']); ?></p>
         </div>
+        <p class="index body and"><?php echo htmlspecialchars($_['index.body.another']); ?></p>
+        <div class="index body projects">
+            <h4><?php echo htmlspecialchars($_['index.body.projects.title']); ?></h4>
+            <p><?php echo htmlspecialchars($_['index.body.projects.desc']); ?></p>
+        </div>
     </div>
     <?php require __DIR__ . '/assets/UI/footer.php'; ?>
 </body>
