@@ -16,7 +16,6 @@ return [
     I want to make this website, a place for me to say somethings that I want to say into my primary website,
     without risquing to destroy it.',
     'index.body.another' => 'About this website!',
-    'index.body.projects.title' => 
-    'My procjets!',
-    'index.body.projects.desc' => 'projects'
+    'index.body.projects.title' => 'My procjets!',
+    'index.body.projects.desc' => 'I\'ve multiple projects.'
 ];?>
